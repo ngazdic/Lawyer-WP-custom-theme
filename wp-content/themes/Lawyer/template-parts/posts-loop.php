@@ -9,7 +9,7 @@
 
                     the_post();
                     ?>
-                    <article class="news-item mb-5 " data-animation="slide-top">
+                    <article class="news-item mb-5 animation" data-animation="slide-top">
                         <div class="row justify-content-sm-between">
                             <div class="col-12 mb-4 col-md-7 mb-md-0 col-lg-6">
                                 <div class="news-item-content">

@@ -19,7 +19,7 @@ get_template_part('/template-parts/lead-section');
                 <div class="container">
                     <div class="row justify-content-sm-between">
                         <div class="col-12 col-md-6 col-lg-5 order-last order-md-first">
-                            <figure class="mb-0 " data-animation="slide-right">
+                            <figure class="mb-0 animation" data-animation="slide-right">
                                 <img src="<?php the_field('page_side_image'); ?>" alt=""/>
                             </figure>
                         </div>

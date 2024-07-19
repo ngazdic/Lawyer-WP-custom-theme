@@ -18,7 +18,7 @@ function lawyer_scripts() {
     wp_enqueue_script('Bootstrap Bundle', get_template_directory_uri() . '/frontend/js/bootstrap.bundle.min.js', array('jQuery'), '4.3.1', true);
     wp_enqueue_script('Font Awesome', 'https://kit.fontawesome.com/f4353abedd.js', array(), '6', true);
     wp_enqueue_script('Owl Carousel', get_template_directory_uri() . '/frontend/js/owl.carousel.min.js', array('jQuery'), '2.3.4', true);
-    wp_enqueue_script('Main JS', get_template_directory_uri() . '/frontend/js/main.js', array(''), '1.0', true);
+    wp_enqueue_script('Main JS', get_template_directory_uri() . '/frontend/js/main.js', array('jQuery'), '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'lawyer_scripts');
@@ -58,7 +58,7 @@ add_action('init', 'lawyer_menus');
 
 function lawyer_create_post_type() {
 
-    register_post_type('our-services', array(
+    register_post_type('our-service', array(
         'labels' => array(
             'name' => 'Services',
             'singular_name ' => 'Service',

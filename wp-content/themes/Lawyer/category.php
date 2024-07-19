@@ -16,7 +16,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-9 col-md-8 col-lg-6 col-xl-5">
-                    <article class="lead-section-content px-4 py-5 " data-animation="slide-right">
+                    <article class="lead-section-content px-4 py-5 animation" data-animation="slide-right">
                         <h1 class="lead-section-title text-uppercase mb-4">Category: <?php single_cat_title();  ?></h1>
                         <p class="lead-section-description">
                       <?php the_archive_description(' <p class="lead-section-description">','</p>') ?>
