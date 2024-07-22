@@ -70,29 +70,74 @@ function lawyer_create_post_type() {
             'edit' => 'Edit',
             'edit_item' => 'Edit Service Item',
             'view' => 'View Service',
-            'view_item'=>'View Service Item',
-            'featured_image'=>'Featured Image for this service'
-            
+            'view_item' => 'View Service Item',
+            'featured_image' => 'Featured Image for this service'
         ),
-        
-        
         'public' => true,
-        'hierarchical'=> false,
+        'hierarchical' => false,
         'menu_icon' => 'dashicons-admin-generic',
-        'menu_position'=>17,
+        'menu_position' => 17,
         'supports' => array(
-            
             'title',
             'thumbnail',
             'editor'
-            
         )
-        
-        
     ));
 }
 
 add_action('init', 'lawyer_create_post_type');
 
+//sa ovom funkcijom ispod registrujemo sidebar
+
+function lawyer_init_side_bar() {
+
+    // Register the primary sidebar
+    register_sidebar(array(
+        'id'            => 'sidebar_1',
+        'name'          => __( 'Primary Sidebar', 'textdomain' ),
+        'description'   => __( 'A page sidebar', 'textdomain' ),
+        'before_widget' => '<div id="%1$s" class="widget mb-4 p-4 bg-light %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title mb-5">',
+        'after_title'   => '</h3>',
+    ));
+    
+    // Register the first footer sidebar
+    register_sidebar(array(
+        'id'            => 'footer_1',
+        'name'          => __( 'Footer Sidebar 1', 'textdomain' ),
+        'description'   => __( 'A footer sidebar 1', 'textdomain' ),
+        'before_widget' => '<div id="%1$s" class="widget mb-4 p-4 bg-light %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title mb-5">',
+        'after_title'   => '</h3>',
+    ));
+    
+    // Register the second footer sidebar
+    register_sidebar(array(
+        'id'            => 'footer_2',
+        'name'          => __( 'Footer Sidebar 2', 'textdomain' ),
+        'description'   => __( 'A footer sidebar 2', 'textdomain' ),
+        'before_widget' => '<div id="%1$s" class="widget mb-4 p-4 bg-light %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title mb-5">',
+        'after_title'   => '</h3>',
+    ));
+    
+    // Register the third footer sidebar
+    register_sidebar(array(
+        'id'            => 'footer_3',
+        'name'          => __( 'Footer Sidebar 3', 'textdomain' ),
+        'description'   => __( 'A footer sidebar 3', 'textdomain' ),
+        'before_widget' => '<div id="%1$s" class="widget mb-4 p-4 bg-light %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title mb-5">',
+        'after_title'   => '</h3>',
+    ));
+}
+
+// Hook the function into the 'widgets_init' action
+add_action('widgets_init', 'lawyer_init_side_bar');
 
 require get_template_directory() . '/inc/options.php';
+require get_template_directory() . '/inc/widgets.php';

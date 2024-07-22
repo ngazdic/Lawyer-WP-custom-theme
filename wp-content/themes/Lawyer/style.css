@@ -141,3 +141,69 @@ footer .social a{
     background-color:#0056b3;
     color:white;
 }
+
+.widget ul{
+    
+    padding-left:0;
+    list-style:none;
+}
+
+.widget ul a{
+    
+    display:block;
+        font-size:1.8rem;
+    font-weight:500;
+    color:black;
+    text-decoration:none;
+    margin-bottom:10px;
+    transition:0.3s linear;
+    
+}
+
+.widget ul a:hover{
+    
+    padding-left:20px;
+}
+
+.widget h3,
+.widget h4{
+    border-bottom:1px solid #aaa;
+    padding-bottom:10px;
+    color:#0056b3;
+}
+
+.widget form label{
+    
+    display:none;
+}
+
+#wp-block-search__input-1{
+    
+    border:1px solid #ccc;
+    background-color:#fff;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color:black;
+    padding:5px;
+    max-width: 70%;
+}
+
+.wp-block-search__button {
+    
+    padding:5px;
+    background-color:#004085;
+    color:white;
+    line-height:3rem;
+    font-size:1.8rem;
+    border:none;
+      max-width: 30%;
+}
+
+.widget .service-item a{
+    
+    color:#000;
+    text-decoration: none;
+}
+
+
+
