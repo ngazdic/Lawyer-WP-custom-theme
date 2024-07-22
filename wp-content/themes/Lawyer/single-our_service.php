@@ -57,7 +57,7 @@ get_header();
         echo '<p>No content found.</p>';
     }
     ?>
-
+ <?php get_template_part('template-parts/pagination');?>
     <!-- Info Section -->
     <?php get_template_part('/template-parts/info-section'); ?>
 

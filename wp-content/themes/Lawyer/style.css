@@ -15,3 +15,129 @@ Tags: responsive, bootstrap 4, lawyer, multipage
     
     margin-top:32px;
 }
+
+
+footer .social a{
+    
+    text-decoration: none;
+}
+
+
+.wpcf7 form.sent .wpcf7-response-output{
+     border:1px solid green;
+  background-color: rgba(0, 255, 0, 0.5);
+  padding:20px;
+  color:black;
+    
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  border:1px solid red;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding:20px;
+  color:white;
+  
+}
+
+
+.error-page h1{
+    
+    font-size:10rem;
+    font-weight:bold;
+}
+
+.error-page p{
+    
+    font-size:5rem;
+    line-height:3.5rem;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+
+@media (min-width: 768px){
+   
+    .error-page{
+        
+        padding: 5rem 0 !important;
+    }
+    
+    .error-page h1{
+    
+    font-size:15rem;
+    font-weight:bold;
+}
+
+.error-page p{
+    
+
+    margin-bottom:40px;
+}
+
+    
+}
+
+
+@media (min-width: 992px){
+    
+     .error-page{
+        
+        padding: 10rem 0 !important;
+    }
+    
+}
+
+.news-pagination a,
+.single-news-pagination a{
+    
+    display:block;
+    font-size:2rem;
+    font-weight:500;
+    padding:10px;
+    background-color:#ccc;
+    color:black;
+    text-decoration:none;
+    transition:0.2s linear;
+    
+    
+}
+
+.news-pagination a:hover,
+.single-news-pagination a:hover{
+    
+    box-shadow:0 0 10px #444;
+}
+
+
+.news-pagination-full .nav-links{
+    
+    display:flex;
+    text-decoration:none;
+    border:1px solid #aaa;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.news-pagination-full .page-numbers{
+    
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background-color:#ccc;
+    color:black;
+    border-right:1px solid #aaa;
+    font-size:2rem;
+}
+
+
+.news-pagination-full .page-numbers:last-of-type{
+    
+    border-right: 0px solid #aaa;
+}
+
+.news-pagination-full .page-numbers.current{
+    
+    background-color:#0056b3;
+    color:white;
+}

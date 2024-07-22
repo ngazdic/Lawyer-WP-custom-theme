@@ -2,7 +2,7 @@
 
 
 
-
+<!-- nama se na index.php izlistavaju sve vesti preko posts-loop template-a-->
 <main>
 
     <?php

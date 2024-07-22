@@ -93,3 +93,6 @@ function lawyer_create_post_type() {
 }
 
 add_action('init', 'lawyer_create_post_type');
+
+
+require get_template_directory() . '/inc/options.php';

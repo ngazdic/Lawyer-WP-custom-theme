@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <main>
-    <section class="team-single">
+    <section class="team-single mb-5">
         <div class="container">
             <?php
             if (have_posts()) {
@@ -12,7 +12,7 @@ get_header();
                     ?>
                     <div class="team-single-header">
                         <h1 class="mb-4 animation" data-animation="slide-bottom" data-delay="0s"><?php the_title(); ?></h1>
-                        <p class="team-member-position" data-animation="slide-bottom" ><?php the_field('member_position'); ?></p>
+                        <p class="team-member-position" data-animation="slide-bottom"><?php the_field('member_position'); ?></p>
                     </div><!-- .team-single-header end -->
 
                     <div class="row">
@@ -30,12 +30,14 @@ get_header();
                     </div>
                     <?php
                 }
+                // Correct placement for pagination template part
+              
             }
             ?>
-        </div>
+        </div><!-- .container end -->
     </section>
-
-    <?php get_template_part('/template-parts/info-section'); ?>
+    <?php   get_template_part('template-parts/pagination'); ?>
+    <?php get_template_part('template-parts/info-section'); ?>
 </main>
 
 <?php

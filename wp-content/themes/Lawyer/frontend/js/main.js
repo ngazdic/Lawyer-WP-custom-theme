@@ -31,6 +31,7 @@ $(document).ready(function(){
             
             loop:true,
             autoplay:true,
+              
             
             responsive:{
                 0:{
@@ -38,6 +39,7 @@ $(document).ready(function(){
                     margin:0
                 },
                 992:{
+                    
                     items:2,
                     margin:30
                 }

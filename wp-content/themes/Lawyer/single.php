@@ -73,6 +73,10 @@ get_header();
 
             <?php
         }
+        ?>
+    
+ <?php get_template_part('/template-parts/pagination'); ?>
+    <?php
     }
     ?>
 
